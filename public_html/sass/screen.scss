@@ -1,0 +1,81 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/css3";
+@import "compass/reset";
+strong {
+   font-weight: bold;
+}
+h1 {
+   font-family: 'Open Sans';
+   font-size: 23px;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 500;
+   line-height: 23px;
+}
+h3 {
+   font-family: 'Open Sans';
+   font-size: 17px;
+   font-style: normal;
+   font-variant: normal;
+   font-weight: 500;
+   line-height: 23px;
+}
+p {
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+}
+blockquote {
+           font-family: 'Open Sans';
+           font-size: 17px;
+           font-style: normal;
+           font-variant: normal;
+           font-weight: 400;
+           line-height: 23px;
+}
+pre {
+    font-family: 'Open Sans';
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 23px;
+}
+div.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+div.contact {
+    text-align: center;
+    font-size: 0.8em;
+    border-bottom: 1px solid #666;
+
+    .name,
+    .org,
+    .jobtitle,
+    .email {
+        @include inline-block;
+        padding: 0.2em 0.5em;
+    }
+}
+
+div.courses {
+    text-align: center;
+
+    a {
+        @include inline-block;
+        outline: none;
+        cursor: pointer;
+
+        img {
+            outline: none;
+        }
+    }
+}
